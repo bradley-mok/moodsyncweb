@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoodSync | Music that feels you</title>
+  <meta name="description" content="MoodSync finds music that matches how you feel, using your camera, an emoji, or your environment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#home" class="logo" data-tab="home">
+    <svg viewBox="0 0 24 24" class="logo-ic" aria-hidden="true"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/></svg>
+    MoodSync
+  </a>
+  <nav class="tabs" aria-label="Main">
+    <button data-tab="home" aria-selected="true">Home</button>
+    <button data-tab="about" aria-selected="false">About</button>
+    <button data-tab="features" aria-selected="false">Features</button>
+    <button data-tab="screens" aria-selected="false">App screens</button>
+    <button data-tab="plans" aria-selected="false">Plans</button>
+    <button data-tab="contact" aria-selected="false">Contact</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="panel active">
+    <!-- Dancer photo placeholder: save your clean photo as assets/hero-dancer.jpg
+         next to index.html. The .hero rule in styles.css shows it behind the
+         blue-to-peach overlay. Until the file exists, the gradient shows instead. -->
+    <div class="hero">
+      <div class="hero-copy">
+        <h1><span class="mood">MOOD</span> <span class="sync">SYNC</span></h1>
+        <p class="tagline">Music that feels you</p>
+        <ul class="hero-list">
+          <li><svg class="ic" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>Discover new music</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>Match your mood and your sound</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>Track your mood patterns</li>
+          <li><svg class="ic" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Access anywhere anytime</li>
+        </ul>
+        <div class="cta-row">
+          <button class="btn primary" data-tab="screens">See the app</button>
+          <button class="btn ghost" data-tab="features">What it does</button>
+        </div>
+      </div>
+      <div class="social">
+        <span>Instagram <strong>@moodsync2026</strong></span>
+        <span>TikTok <strong>@moodsync2026</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="panel">
+    <h2>About us</h2>
+    <p class="lead">MoodSync is a music app that helps you find songs based on how you are feeling. Instead of searching for music manually, the app understands your mood in different ways.</p>
+    <div class="grid">
+      <article class="card"><h3>Your face</h3><p>Use your camera to detect your facial expression and estimate your mood.</p></article>
+      <article class="card"><h3>Your pick</h3><p>Choose an emoji that matches how you feel, or select your environment: gym, home, or a quiet library.</p></article>
+      <article class="card"><h3>Your well-being</h3><p>Feeling sad? It suggests calming or uplifting songs. At the gym, it suggests energetic music.</p></article>
+    </div>
+    <p class="body">MoodSync makes listening to music more personal while helping you become more aware of your emotional well-being. It also supports:</p>
+    <ul class="checks">
+      <li>Personalized playlist creation</li>
+      <li>Customization of your preferences</li>
+      <li>Music for reflective or recovery moments</li>
+    </ul>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="panel">
+    <h2>Features</h2>
+    <div class="grid">
+      <article class="card"><div class="icon"><svg class="ic" viewBox="0 0 24 24"><path d="M4 7h3l2-3h6l2 3h3v12H4z"/><circle cx="12" cy="13" r="3.5"/></svg></div><h3>Mood detection</h3><p>Camera-based facial analysis, with heart rate readings where available, generates a playlist for how you feel.</p></article>
+      <article class="card"><div class="icon"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5a4.5 4.5 0 0 0 7 0"/><path d="M9 9h.01M15 9h.01"/></svg></div><h3>Emoji mood picks</h3><p>Tap the emoji that matches your mood and get music to fit it.</p></article>
+      <article class="card"><div class="icon"><svg class="ic" viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3>Environment playlists</h3><p>Tell MoodSync where you are, such as the gym, home, or a library, and the music adapts.</p></article>
+      <article class="card"><div class="icon"><svg class="ic" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></div><h3>Coping mode</h3><p>Set a goal, for example from sad to happy, and get music that lifts your mood.</p></article>
+      <article class="card"><div class="icon"><svg class="ic" viewBox="0 0 24 24"><path d="M4 6h10M4 12h10M4 18h6M18 15v6M15 18h6"/></svg></div><h3>Auto playlists</h3><p>Recommendations built from your listening history, your environment, and your detected emotion.</p></article>
+      <article class="card"><div class="icon"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><h3>Mood history</h3><p>A 14-day timeline and mood patterns, so you can reflect on how you have been feeling.</p></article>
+      <article class="card"><div class="icon"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5v7l6-3.5z"/></svg></div><h3>Playlists and playback</h3><p>Build playlists, play songs, and follow what is playing in the Now Playing view.</p></article>
+      <article class="card"><div class="icon"><svg class="ic" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.6M8.2 13.2l7.6 4.6"/></svg></div><h3>Search, library and sharing</h3><p>Search songs, artists, and albums, save favorites, and share tracks with friends.</p></article>
+    </div>
+
+    <h2 class="sub">How it works</h2>
+    <ol class="steps">
+      <li><strong>Create an account</strong><span>Sign up in a few taps.</span></li>
+      <li><strong>Log in</strong><span>Returning users go straight to Home.</span></li>
+      <li><strong>Pick your mood</strong><span>Detect it, choose an emoji, or pick your environment.</span></li>
+      <li><strong>Press play</strong><span>Listen to your playlist and save what you love.</span></li>
+    </ol>
+  </section>
+
+  <!-- APP SCREENS -->
+  <section id="screens" class="panel">
+    <h2>App screens</h2>
+    <p class="lead">A look inside the MoodSync app. Tap any screen to enlarge it.</p>
+    <div class="shots">
+      <figure class="shot"><img src="assets/screens/01-home.jpeg" alt="Home screen with quick actions" loading="lazy"><figcaption>Home</figcaption></figure>
+      <figure class="shot"><img src="assets/screens/09-mood-detection.png" alt="Mood detection screen" loading="lazy"><figcaption>Mood detection</figcaption></figure>
+      <figure class="shot"><img src="assets/screens/02-search.png" alt="Search screen" loading="lazy"><figcaption>Search</figcaption></figure>
+      <figure class="shot"><img src="assets/screens/03-playlists.png" alt="My playlists screen" loading="lazy"><figcaption>Playlists</figcaption></figure>
+      <figure class="shot"><img src="assets/screens/04-library.png" alt="Library screen with favorites and mood history" loading="lazy"><figcaption>Library</figcaption></figure>
+      <figure class="shot"><img src="assets/screens/05-profile.png" alt="Profile screen with subscription" loading="lazy"><figcaption>Profile</figcaption></figure>
+      <figure class="shot"><img src="assets/screens/06-share-track.png" alt="Share track screen" loading="lazy"><figcaption>Share track</figcaption></figure>
+      <figure class="shot"><img src="assets/screens/07-settings.png" alt="Settings screen" loading="lazy"><figcaption>Settings</figcaption></figure>
+      <figure class="shot"><img src="assets/screens/08-sign-in.png" alt="Sign in screen" loading="lazy"><figcaption>Sign in</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- PLANS: matches the in-app Subscription screen. Premium price and features were cut off in the screenshot; fill the [brackets] from the app. -->
+  <section id="plans" class="panel">
+    <h2>Plans</h2>
+    <p class="lead">Start free, upgrade when you want more.</p>
+    <div class="plans">
+      <article class="card plan">
+        <h3>Free</h3>
+        <p class="plan-sub">Get started with MoodSync</p>
+        <p class="price">Free</p>
+        <ul class="checks">
+          <li>Mood detection and emoji mood picks</li>
+          <li>10 song suggestions per mood</li>
+          <li>Full-length song streaming</li>
+          <li>Mood history and playlists</li>
+        </ul>
+        <button class="btn outline plan-btn" data-tab="contact">Get started</button>
+      </article>
+
+      <article class="card plan featured">
+        <h3>Premium</h3>
+        <p class="price">R[price] <span>per month</span></p>
+        <ul class="checks">
+          <li>Everything in free</li>
+          <li>Mood Insights dashboard</li>
+          <li>mood mix plus:25 suggestions and fresh picks</li>
+          <li>premium collections for sucs,sleep and workouts</li>
+        </ul>
+        <button class="btn primary plan-btn" data-tab="contact">Upgrade to Premium</button>
+      </article>
+
+      <article class="card plan">
+        <h3>Family</h3>
+        <p class="plan-sub">Premium for the whole household</p>
+        <p class="price">R79.99 <span>per month</span></p>
+        <ul class="checks">
+          <li>Everything in Premium</li>
+          <li>Share with up to 6 people <em>(coming soon)</em></li>
+          <li>One bill for the household</li>
+        </ul>
+        <button class="btn outline plan-btn" data-tab="contact">Upgrade to Family</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="panel">
+    <h2>Contact</h2>
+    <p class="lead">Follow along, say hello, or tell us what playlist should exist.</p>
+    <div class="contact-links">
+      <a class="pill" href="#" target="_blank" rel="noopener">Instagram @moodsync2026</a>
+      <a class="pill" href="#" target="_blank" rel="noopener">TikTok @moodsync2026</a>
+      <a class="pill" href="mailto:hello@example.com">hello@example.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>&copy; 2026 MoodSync. Music that feels you.</footer>
+
+<div id="lightbox" class="lightbox" hidden>
+  <button class="close" aria-label="Close">&times;</button>
+  <img alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
